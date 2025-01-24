@@ -8,15 +8,22 @@ public class BasicInput {
         String userString;
 
         Scanner scnr = new Scanner(System.in);
-
+        //Text and Scanner for Int
         System.out.println("Enter integer:");
         userInt = scnr.nextInt();
+        //Text and Scanner for double
+        System.out.println("Enter double:");
+        userDouble = scnr.nextDouble();
+        //Text and Scanner for Character
+        System.out.println("Enter character:");
+        userChar = scnr.next().charAt(0);
+        //Text and Scanner for String
+        System.out.println("Enter string:");
+        userString = scnr.next();
 
-        // TODO (1): Finish reading other items into variables, then output the four values on a single line separated by a space
-
-        // TODO (2): Output the four values in reverse
-
-        // TODO (3): Cast the double to an integer, and output that integer
-
+        System.out.println(userInt + " " + userDouble + " " + userChar + " " + userString);
+        System.out.println(userString + " " + userChar + " " + userDouble + " " + userInt);
+        int convertedValue = (int)userDouble;
+        System.out.println(userDouble + "cast to an integer is " + convertedValue);
     }
 }
